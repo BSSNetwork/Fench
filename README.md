@@ -1,5 +1,7 @@
 #Fench
 
+![fench](http://octodex.github.com/images/minion.png)
+
 Quick and Easy PHP Template Engine,
 
 this code is only 147 lines .
