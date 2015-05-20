@@ -1,15 +1,14 @@
 #Fench
 
 Quick and Easy PHP Template Engine,
+
 this code is only 147 lines .
 
-
+```
 <?php
 require 'view.php';
- 
 $view=new view();
-
-$view->setPath('theme/views/');//Set Template File Storage Directory, Must end with "/"
+$view->setPath('theme/views/'); //Set Template File Storage Directory, Must end with "/"
  
 //The First Method For Setting The Output parameters
 $view->setAttr("title", "Variable example");
@@ -22,15 +21,19 @@ $view->array = array(
 $view->j = 5;
 //Enter The Page Header, Content, Footer
 $view->display("header.php")->display('index.php')->display('footer.php')->render();
-
 ```
-// Direct Output Single File
+
+
+## Direct Output Single File
+
 ```
 $view=new ('index.php');
 $view->render();
 ```
+
 #Template File
-if - else
+## if - else
+
 ```
 {if $array}
     ...
@@ -40,13 +43,17 @@ if - else
     ...
 {/if}
 ```
-Foreach loop
+
+## Foreach loop
+
 ```
 {foreach $array as $key => $value}
     {$key} => {$value}<br />
 {/foreach}
 ```
-while loop
+
+## while loop
+
 ```
 {$i = 1}
 {while $i < $j}
@@ -54,13 +61,15 @@ while loop
   {$i++}
 {/while}
 ```
-for loop
+
+## for loop
 ```
 {for ($i=0;$i<count($array);$i++)}
     {$array[$i]}
 {/for}
 ```
-Assignment Calculation
+
+## Assignment Calculation
 ```
 {$i = 1} // There must be a space before and after the equals sign =
 {$i++}
