@@ -1,6 +1,6 @@
 #Fench
 
-![fench](http://octodex.github.com/images/minion.png)
+![fench](https://github.com/ahmadpanah/Fench/raw/master/fench.png)
 
 Quick and Easy PHP Template Engine,
 
